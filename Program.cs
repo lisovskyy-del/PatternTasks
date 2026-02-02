@@ -7,6 +7,7 @@ class Program
         Console.WriteLine("\nChoose Level:\n");
         Console.WriteLine("1. Level 1 (Task 1-3)");
         Console.WriteLine("2. Level 2 (Task 4-6)");
+        Console.WriteLine("3. Level 3");
         Console.WriteLine("0. Exit");
         string? input = InputHelpers.StringInput("\nYour choice: ");
 
@@ -24,6 +25,10 @@ class Program
             else if (userChoice == 2)
             {
                 Level2.Menu.Run();
+            }
+            else if (userChoice == 3)
+            {
+                Level3.Menu.Run();
             }
             else
             {
